@@ -204,9 +204,8 @@ document.addEventListener('DOMContentLoaded', function () {
         proximity: 130,
         density: 12000
   });
-  var intro = document.getElementById('parc');
-  intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
-}, false);
+ 
+});
 
 
 

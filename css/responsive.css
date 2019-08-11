@@ -580,6 +580,9 @@ header .language {
 	padding-top: 15px;
 	width: 70%;
 }
+header {
+	display: none;
+}
 }
 @media(max-width:540px) {
 .small-r-items .media {
