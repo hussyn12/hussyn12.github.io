@@ -235,7 +235,7 @@ section {
 .heading-block span {
 	font-family: 'Crimson Text', serif;
 	font-size: 18px;
-	font-weight: 400;
+	font-weight: 700;
 	color: #6f6f6f;
 	margin-top: 5px;
 	display: inline-block;
@@ -2805,7 +2805,7 @@ header.coporate-header .is-sticky .sticky .ownmenu > li > .megamenu {
 .icon-box.ib-text-alt p {
 	font-family: "Crimson Text", Georgia, Cambria, "Times New Roman", Times, serif;
 	font-style: italic;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 24px;
 	font-weight: 600;
 }
