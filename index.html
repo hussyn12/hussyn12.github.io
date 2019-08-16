@@ -359,7 +359,7 @@
           <div id="contact_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Thank You. Your Message has been Submitted</div>
           
           <!-- FORM -->
-          <form role="form" id="contact_form" class="contact-form" method="post" onSubmit="return false">
+          <form id="contact_form" class="contact-form" method="POST" action="https://www.elformo.com/forms/949782dc-821c-41ae-a25d-d3cf1cc3739b">
             <ul class="row">
               <li class="col-sm-4">
                 <label>
@@ -368,12 +368,12 @@
               </li>
               <li class="col-sm-4">
                 <label>
-                  <input type="text" class="form-control" name="email" id="email" placeholder="EMAIL">
+                  <input type="text" class="form-control" name="_replyto" id="email" placeholder="EMAIL">
                 </label>
               </li>
               <li class="col-sm-4">
                 <label>
-                  <input type="text" class="form-control" name="company" id="company" placeholder="SUBJECT">
+                  <input type="text" class="form-control" name="_subject" id="company" placeholder="SUBJECT">
                 </label>
               </li>
               <li class="col-sm-12">
@@ -382,7 +382,7 @@
                 </label>
               </li>
               <li class="col-sm-12">
-                <button type="submit" value="submit" id="btn_submit" onClick="proceed();">SEND ME</button>
+                <button type="submit" value="Send" id="btn_submit" >SEND ME</button>
               </li>
             </ul>
           </form>
