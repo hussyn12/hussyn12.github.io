@@ -1346,9 +1346,11 @@ header.coporate-header .is-sticky .sticky .ownmenu > li > .megamenu {
 }
 .tp-banner {
 	height: 100%;
-	height: -moz-available;          /* WebKit-based browsers will ignore this. */
-	height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-	height: fill-available;
+	          /* WebKit-based browsers will ignore this. */
+	  /* Mozilla-based browsers will ignore this. */
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
 }
 
 .logo {
