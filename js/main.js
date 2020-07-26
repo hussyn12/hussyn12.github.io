@@ -1,6 +1,6 @@
 jQuery( document ).ready(function( $ ) {
 "use strict"
-/*-----------------------------------------------------------------------------------*/
+
 /*-----------------------------------------------------------------------------------*/
 /* 	COUNTER JS
 /*-----------------------------------------------------------------------------------*/
@@ -10,55 +10,16 @@ $('.counter .timer').countTo();
 /*-----------------------------------------------------------------------------------*/
 $(".sticky").sticky({topSpacing:0});
 /*-----------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------
-    Animated progress bars
-/*-----------------------------------------------------------------------------------*/
-$('.progress-bars').waypoint(function() {
-  $('.progress').each(function(){
-    $(this).find('.progress-bar').animate({
-      width:$(this).attr('data-percent')
-     },200);
-});},
-	{ 
-	offset: '100%',
-    triggerOnce: true 
-});
-/*-----------------------------------------------------------------------------------*/
-/* 	SLIDER REVOLUTION
-/*-----------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------*/
-/* 	SLIDER REVOLUTION
-/*-----------------------------------------------------------------------------------*/
-
-/*-----------------------------------------------------------------------------------*/
 /* 	ANIMATION
 /*-----------------------------------------------------------------------------------*/
 var wow = new WOW({
-    boxClass:     'animate',      // animated element css class (default is wow)
-    animateClass: 'animated', // animation css class (default is animated)
-    offset:       100,          // distance to the element when triggering the animation (default is 0)
-    mobile:       false        // trigger animations on mobile devices (true is default)
+    boxClass:     'animate',      
+    animateClass: 'animated', 
+    offset:       100,          
+    mobile:       false       
 });
 wow.init();
-/*-----------------------------------------------------------------------------------*/
-/*	ISOTOPE PORTFOLIO
-/*-----------------------------------------------------------------------------------*/
-var $container = $('.port-wrap .items');
-    $container.imagesLoaded(function () {
-    $container.isotope({
-    itemSelector: '.portfolio-item',
-    layoutMode: 'masonry'
-});	
-});
-$('.portfolio-filter li a').on('click', function () {
-    $('.portfolio-filter li a').removeClass('active');
-    $(this).addClass('active');
-    var selector = $(this).attr('data-filter');
-    $container.isotope({
-      filter: selector
-    });
-return false;
-});
+
 /*-----------------------------------------------------------------------------------*/
 /* 		NAVIGATION SMOOTH SCROLL
 /*-----------------------------------------------------------------------------------*/
@@ -185,10 +146,6 @@ $.each(html.split(''), function(k, v) {
     	ret += "<span class='letter hvr-wobble-to-bottom-right' >" + v +  "</span>" ;
    }
 });
-
-//var textWrapper = document.querySelector('.ml9 .letters');
-//textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
-
 
 
 $('.ml9 .letters').html(ret);
