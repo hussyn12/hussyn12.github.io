@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-var html = "Hi,/I'm Hussain,/Web Developer.";
+var html = "Hi,/I'm Hussain,/Software Engineer.";
 var ret  = "";
 $.each(html.split(''), function(k, v) {
     
